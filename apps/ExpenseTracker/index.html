@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker - Y1K Software</title>
+
+    <meta name="description"
+          content="Expense Tracker by Y1K Software - a simple personal finance app to track income, expenses and budgets.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            color: #1f2937;
+            background: #f9fafb;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .navbar {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #4b5563;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #111827;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 70px 0 45px;
+        }
+
+        .page-header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            color: #6b7280;
+            font-size: 18px;
+        }
+
+        .details-section {
+            padding: 10px 0 80px;
+        }
+
+        .detail-card {
+            max-width: 750px;
+            margin: 0 auto 24px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 35px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .detail-card h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .detail-card p {
+            color: #6b7280;
+            margin-bottom: 12px;
+        }
+
+        .features {
+            list-style: none;
+        }
+
+        .features li {
+            margin: 9px 0;
+            color: #4b5563;
+        }
+
+        .features li::before {
+            content: "✓";
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 20px;
+            border-radius: 8px;
+            background: #111827;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .button-secondary {
+            background: #ffffff;
+            color: #111827;
+            border: 1px solid #d1d5db;
+        }
+
+        .note {
+            text-align: center;
+            color: #9ca3af;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #ffffff;
+            border-top: 1px solid #e5e7eb;
+            padding: 30px 0;
+            text-align: center;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                height: auto;
+                padding: 18px 0;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .page-header h1 {
+                font-size: 32px;
+            }
+
+            .detail-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a href="/" class="logo">Y1K Software</a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/apps/">Apps</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="page-header">
+        <div class="container">
+
+            <h1>Expense Tracker</h1>
+
+            <p>
+                A simple personal finance app to track income, expenses and budgets.
+            </p>
+
+        </div>
+    </section>
+
+
+    <section class="details-section">
+
+        <div class="container">
+
+            <div class="detail-card">
+                <h2>Overview</h2>
+                <p>
+                    Expense Tracker helps you record daily income and expenses,
+                    organize transactions by category, and understand your
+                    spending habits over time. All data stays on your device.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h2>Features</h2>
+                <ul class="features">
+                    <li>Track income, expenses and savings</li>
+                    <li>Organize transactions by category</li>
+                    <li>View daily and monthly reports</li>
+                    <li>Visualize spending using charts</li>
+                    <li>Create monthly category budgets</li>
+                    <li>Export expense data to CSV and PDF</li>
+                    <li>Backup and restore your local data</li>
+                </ul>
+            </div>
+
+            <div class="actions">
+
+                <a href="/apps/ExpenseTracker/privacy-policy.html" class="button">
+                    Privacy Policy
+                </a>
+
+                <a href="/apps/" class="button button-secondary">
+                    Back to Apps
+                </a>
+
+            </div>
+
+            <p class="note">
+                This is a placeholder page. Full application details, screenshots
+                and download links will be added soon.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Y1K Software. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
