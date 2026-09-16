@@ -148,7 +148,7 @@
 
         <header class="page-header">
             <h1>Privacy Policy - Expense Tracker</h1>
-            <p class="subtitle">Last updated: September 7, 2026</p>
+            <p class="subtitle">Last updated: September 16, 2026</p>
         </header>
 
         <p>
@@ -175,7 +175,7 @@
                     <td>No</td>
                 </tr>
                 <tr>
-                    <td>Does the App send data to a server or the internet?</td>
+                    <td>Does the App directly send data to Y1K Software or its servers?</td>
                     <td>No</td>
                 </tr>
                 <tr>
@@ -184,23 +184,23 @@
                 </tr>
                 <tr>
                     <td>Where is your data stored?</td>
-                    <td>Locally on your device only</td>
+                    <td>In the App's local storage; copies may also exist in backups or exports you control</td>
                 </tr>
                 <tr>
-                    <td>Can you delete your data?</td>
-                    <td>Yes, anytime, from within the App</td>
+                    <td>Can you delete your financial records?</td>
+                    <td>Yes, from within the App or by uninstalling the App</td>
                 </tr>
             </table>
         </div>
 
-        <h2>2. Data We Collect</h2>
+        <h2>2. Data Processed by the App</h2>
 
         <p>
-            The App does <strong>not</strong> collect, transmit, or share any personal
-            data with us or any third party. All information you enter — including
-            expenses, categories, budgets/planner entries, notes, amounts, dates, and
-            your selected currency/country preference — is stored exclusively in a
-            local database (Room/SQLite) on your device.
+            Y1K Software does <strong>not</strong> receive, collect, sell, or share the
+            information you enter in the App. The App processes expenses, categories,
+            budgets/planner entries, notes, amounts, dates, currency/country choices,
+            theme and default-transaction settings, and reminder settings locally on
+            your device using Room/SQLite and Android shared preferences.
         </p>
 
         <p>
@@ -210,68 +210,107 @@
 
         <h2>3. Permissions Used</h2>
 
-        <p>The App requests the following device permissions, used strictly as described:</p>
+        <p>The App uses the following Android permissions or special access:</p>
 
         <ul>
             <li>
-                <strong>Storage access (read/write)</strong> — used only when you
-                explicitly choose to <em>Backup</em> your data to a file location you
-                select, or <em>Restore</em> your data from a previously saved backup
-                file. These files stay on your device or in a storage location you
-                control (e.g., a folder you pick); we never access, upload, or view
-                these files.
+                <strong>Notifications</strong> — optional, and used only to show the
+                daily expense reminder when you enable that feature in Preferences.
+                Reminder notifications contain generic text, not your transaction details.
+            </li>
+            <li>
+                <strong>Alarms &amp; reminders</strong> — optional special access used
+                to deliver an enabled daily reminder close to the time you select.
+            </li>
+            <li>
+                <strong>Run after device restart</strong> — used to restore an enabled
+                reminder after your device restarts.
+            </li>
+            <li>
+                <strong>Files selected by you</strong> — Backup, Restore, CSV export,
+                and PDF export use Android's system document picker. The App can read
+                or write the file or destination you choose for that operation; it
+                does not request broad storage access.
             </li>
         </ul>
 
         <p>
             The App does not request access to your contacts, camera, microphone,
-            location, or any other sensitive device permission.
+            or location.
         </p>
 
         <h2>4. Backup &amp; Restore</h2>
 
         <p>
-            The App includes an optional Backup/Restore feature. When you tap
-            "Backup", you choose a file destination on your device (or connected
-            storage), and a copy of your local database is saved there. "Restore"
-            lets you reload that data back into the App. This process is entirely
-            local — no data ever leaves your device or is sent to us or any server.
+            The App includes optional manual Backup and Restore features. When you tap
+            "Backup", you choose a destination through Android's document picker and a
+            ZIP copy of the local database is written there. "Restore" reads the
+            backup file you select. The destination may be local storage, removable
+            storage, or a cloud-backed document provider that you choose. Y1K Software
+            does not receive or have access to these files.
         </p>
-
-        <h2>5. Clear All Data</h2>
 
         <p>
-            You can permanently delete all your data at any time using the
-            <strong>Clear All Data</strong> option in the navigation drawer. This
-            action is irreversible unless you have a backup file saved.
+            Android system backup is enabled for the App. Depending on your device and
+            Android backup settings, Android may copy eligible App data to your device
+            backup service (for example, your Google account) or transfer it to a new
+            device. This is controlled by Android and your account settings, not by
+            Y1K Software. You can manage device backups in Android settings.
         </p>
 
-        <h2>6. Third-Party Services</h2>
+        <h2>5. Report Exports</h2>
 
         <p>
-            The App does not integrate any third-party analytics SDKs, advertising
-            networks, crash reporting services, or cloud services. No data is shared
-            with third parties because none is collected or transmitted in the first
-            place.
+            You may export report data as CSV or PDF. The export can contain dates,
+            transaction types, categories, notes, and amounts. The App writes the file
+            to the destination you select. If you choose a cloud storage provider or
+            later share the file, that provider's or recipient's privacy practices
+            apply. You are responsible for protecting and deleting exported files.
         </p>
 
-        <h2>7. Children's Privacy</h2>
+        <h2>6. Data Retention and Deletion</h2>
 
         <p>
-            The App does not knowingly collect any information from anyone, including
-            children under the age of 13, since it does not collect any personal data
-            at all.
+            Financial records remain in the App until you delete them. The
+            <strong>Clear All Data</strong> option removes expenses, categories, and
+            budget records from the App's active local database. Some App preferences,
+            such as theme, default-transaction choices, and reminder settings, may
+            remain. Uninstalling the App removes its local App data, subject to
+            Android's backup and restore behavior. Manual backups and exports are
+            separate copies and must be deleted from their saved locations by you.
         </p>
 
-        <h2>8. Data Security</h2>
+        <h2>7. Third-Party Services</h2>
 
         <p>
-            Since all data remains on your device and is never transmitted, your data
-            is only as secure as your device itself. We recommend using your device's
-            built-in security features (screen lock, encryption) to protect your data.
+            The App does not integrate third-party analytics, advertising, tracking,
+            or crash-reporting services. It uses software libraries for charts,
+            database access, interface components, and PDF generation; these libraries
+            operate within the App and are not used to transmit your financial data.
+            Android backup services and any document provider you select for a backup
+            or export may process those copies under their own privacy policies.
         </p>
 
-        <h2>9. Changes to This Policy</h2>
+        <h2>8. Children's Privacy</h2>
+
+        <p>
+            The App is intended for personal finance tracking and does not knowingly
+            collect information from children under the age of 13 for Y1K Software.
+            Information entered by any user remains subject to the local storage,
+            backup, and export practices described above.
+        </p>
+
+        <h2>9. Data Security</h2>
+
+        <p>
+            Active App data is stored in the App's private local storage. We recommend
+            using your device's screen lock and encryption. Backup and exported files
+            are outside the App's private storage and are protected according to the
+            destination and provider you select. Keep sensitive exports and backups
+            in a trusted location.
+        </p>
+
+        <h2>10. Changes to This Policy</h2>
 
         <p>
             We may update this Privacy Policy from time to time to reflect changes in
@@ -280,7 +319,7 @@
             constitutes acceptance of the revised policy.
         </p>
 
-        <h2>10. Contact Us</h2>
+        <h2>11. Contact Us</h2>
 
         <p>
             If you have any questions or concerns about this Privacy Policy or the
@@ -289,7 +328,7 @@
 
         <p>
             Email:
-            <a href="mailto:krishna510sm@gmail.com">krishna510sm@gmail.com</a>
+            <a href="mailto:y1ksoftwaresupport@gmail.com">y1ksoftwaresupport@gmail.com</a>
         </p>
 
         <footer>
