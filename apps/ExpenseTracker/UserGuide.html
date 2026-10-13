@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Expense Tracker - Help & User Guide</title>
+<title>Expense Tracker - Help &amp; User Guide</title>
+<meta name="description" content="Learn how to use Expense Tracker: record transactions, review reports, manage categories, plan budgets, export data, and create backups.">
+<link rel="canonical" href="https://y1ksoftware.in/apps/ExpenseTracker/UserGuide.html">
 <style>
 :root {
   --primary:#5b45f4;
@@ -26,7 +28,8 @@ body {
 .container { width:90%; max-width:1100px; margin:auto; }
 .site-header { background:#ffffff; border-bottom:1px solid var(--line); }
 .navbar { height:70px; display:flex; align-items:center; justify-content:space-between; }
-.navbar .logo { font-size:24px; font-weight:700; color:#111827; text-decoration:none; }
+.navbar .logo { display:inline-flex; align-items:center; text-decoration:none; }
+.navbar .brand-logo { display:block; width:154px; height:auto; }
 .navbar nav { display:flex; gap:25px; }
 .navbar nav a { color:#4b5563; font-size:15px; text-decoration:none; }
 .navbar nav a:hover { color:#111827; }
@@ -132,15 +135,17 @@ footer { text-align:center; color:var(--muted); padding:0 20px 40px; font-size:1
   .section { box-shadow:none; break-inside:avoid; }
 }
 </style>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
 <body id="top">
 
 <div class="site-header">
   <div class="container navbar">
-    <a href="/" class="logo">Y1K Software</a>
-    <nav>
+    <a href="/" class="logo"><img class="brand-logo" src="/assets/Logo%20and%20Company%20name.png" width="568" height="220" alt="Y1K Software"></a>
+    <nav aria-label="Primary navigation">
       <a href="/">Home</a>
       <a href="/apps/">Apps</a>
+      <a href="https://play.google.com/store/apps/details?id=com.y1ksoftware.expensetracker" target="_blank" rel="noopener">Download Expense Tracker</a>
     </nav>
   </div>
 </div>
