@@ -38,7 +38,7 @@ for (const file of files) {
   for (const match of html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
     const href = match[1];
     const text = match[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-    if (/Get a (Free )?Quote/i.test(text) && !['#contact', '/#contact'].includes(href)) {
+    if (/Get a (Free )?Quote/i.test(text) && !['#quote', '/#quote'].includes(href)) {
       errors.push(`${rel}: quote CTA does not target the enquiry section (${href})`);
     }
     if (/(Google Play|Download Expense Tracker)/i.test(text) && href !== playUrl) {
@@ -52,6 +52,9 @@ for (const field of ['name', 'email', 'phone', 'service', 'project', 'website'])
   if (!new RegExp(`name=["']${field}["']`).test(home)) errors.push(`index.html: contact form missing ${field} field`);
 }
 if (!home.includes('mailto:y1ksoftwaresupport@gmail.com')) errors.push('index.html: missing direct email fallback');
+if (!home.includes('href="tel:+918610553961"')) errors.push('index.html: missing verified mobile contact link');
+if (!home.includes('id="contact"')) errors.push('index.html: missing contact section anchor');
+if (!home.includes('id="quote"')) errors.push('index.html: missing quote form anchor');
 const script = fs.readFileSync(path.join(root, 'assets/site.js'), 'utf8');
 if (!script.includes('mailto:y1ksoftwaresupport@gmail.com?subject=${subject}&body=${body}')) errors.push('assets/site.js: enquiry email generation missing or incorrect');
 if (fs.readFileSync(path.join(root, 'CNAME'), 'utf8').trim() !== 'y1ksoftware.in') errors.push('CNAME: expected y1ksoftware.in');
